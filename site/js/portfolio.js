@@ -15,5 +15,8 @@ textButton.addEventListener("click", (event) => {
 	const changeName = prompt("Enter your name");
 	document.querySelector("#firstname").style.color = "#fff";
 	document.querySelector("#firstname").innerHTML = changeName;
-	console.log(changeName);
+	const changeBgColor = prompt("Enter a color");
+	document.querySelector(".pink-bg").style.backgroundColor = changeBgColor;
+	document.querySelector("button.pink-bg").style.backgroundColor =
+		changeBgColor;
 });
