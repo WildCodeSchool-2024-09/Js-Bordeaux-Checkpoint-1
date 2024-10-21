@@ -147,5 +147,12 @@ img {
   .disapear {
     display: none;
   }
+
+  section {
+    display: flex;
+    flex-direction: column-reverse;
+    
+  }
+ 
   
 }
