@@ -113,4 +113,8 @@ p {
   header nav {
     justify-content: space-between;
   }
+
+  main > section:first-of-type {
+    text-align: center;
+  }
 }
