@@ -15,8 +15,17 @@ textButton.addEventListener("click", (event) => {
 	const changeName = prompt("Enter your name");
 	document.querySelector("#firstname").style.color = "#fff";
 	document.querySelector("#firstname").innerHTML = changeName;
+
 	const changeBgColor = prompt("Enter a color");
-	document.querySelector(".pink-bg").style.backgroundColor = changeBgColor;
-	document.querySelector("button.pink-bg").style.backgroundColor =
-		changeBgColor;
+
+	const pinkBg = document.querySelectorAll(".pink-bg");
+	for (let i = 0; i < pinkBg.length; i++) {
+		pinkBg[i].style.backgroundColor = changeBgColor;
+	}
+	// document.querySelector("button.pink-bg").style.backgroundColor =
+	// 	changeBgColor;
+	const pinkText = document.querySelectorAll(".pink-text");
+	for (let i = 0; i < pinkText.length; i++) {
+		pinkText[i].style.color = changeBgColor;
+	}
 });
