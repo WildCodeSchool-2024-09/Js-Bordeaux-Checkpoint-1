@@ -35,11 +35,10 @@ function findSeniors (persons) {
   persons.forEach(element => {
     if (element.experience >= 5 && element.job === 'web dev'){
       seniorsDev.push(element.name);
-      return seniors;
     } else if (element.experience >= 5 && element.job === 'data analyst') {
       seniorsData.push(element.name);
-      return seniors;
     }
+    return seniors;
   });
 }
 
