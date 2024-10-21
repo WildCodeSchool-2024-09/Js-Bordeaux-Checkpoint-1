@@ -113,6 +113,15 @@ main > section > figure {
   display: none;
 }
 
+.skills--title{
+  display: none;
+}
+
+.skills{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 @media screen and (min-width: 700px) {
   header nav {
     justify-content: space-between;
@@ -129,9 +138,5 @@ main > section > figure {
   .skills{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .skills--title{
-    grid-column: span 2;
   }
 }
