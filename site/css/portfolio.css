@@ -26,6 +26,10 @@ main section p {
 	padding: 0;
 }
 
+main section figure.desktop img {
+	display: none;
+}
+
 .menu {
 	display: flex;
 	margin-bottom: var(--gutter);
@@ -126,5 +130,8 @@ main section p {
 		justify-content: center;
 		text-align: center;
 		align-items: center;
+	}
+	main section figure.desktop img {
+		display: flex;
 	}
 }
