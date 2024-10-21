@@ -54,6 +54,7 @@ p {
 }
 
 .skills {
+  display: grid;
 	margin-top: calc(var(--gutter) * -2);
 	border-radius: var(--radius);
 	padding: 0 10%;
@@ -83,6 +84,7 @@ p {
 .column:last-child {
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
+	grid-row: 2 / 3;
 }
 
 .column ul {
@@ -131,7 +133,6 @@ p {
   }
 
   .skills {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
