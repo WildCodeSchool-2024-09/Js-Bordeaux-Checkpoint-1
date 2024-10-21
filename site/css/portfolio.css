@@ -36,7 +36,16 @@ article.skills {
 article.skills section:first-of-type {
 	order: 3;
 }
-
+button.pink-bg {
+	padding: 1rem;
+	margin: 1rem;
+	color: #fff;
+	border-radius: 5px;
+	border: 1px solid #fff;
+}
+button.pink-bg:hover {
+	cursor: pointer;
+}
 .menu {
 	display: flex;
 	margin-bottom: var(--gutter);
