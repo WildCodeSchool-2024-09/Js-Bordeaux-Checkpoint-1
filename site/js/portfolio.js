@@ -25,3 +25,26 @@ link.forEach(element => {
     element.style.color = '#750ff7';
 });
 
+const frontDevTools = document.querySelector('#front-dev-tools');
+
+const modifyButton = document.createElement('button');
+modifyButton.type = 'button';
+modifyButton.textContent = 'Modify';
+frontDevTools.appendChild(modifyButton);
+
+modifyButton.addEventListener('click', function(){
+    const list = document.querySelectorAll('.front-dev-tools');
+    list.forEach(element => {
+        element.textContent = '';
+    });
+    const firstLi = document.createElement('li');
+    firstLi.textContent = 'Terminal';
+    frontDevTools.prepend(firstLi);
+    const secondLi = document.createElement('li');
+    secondLi.textContent = 'GitHub';
+    frontDevTools.prepend(secondLi);
+    const thirdLi = document.createElement('li');
+    thirdLi.textContent = 'VSCode';
+    frontDevTools.prepend(thirdLi);
+});
+
