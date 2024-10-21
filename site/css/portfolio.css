@@ -79,6 +79,13 @@ p {
 	text-align: var(--textAlign);
 }
 
+article.skills {
+  flex-direction: row-reverse;
+  padding-top: 30px;
+  display:flex;
+  flex-wrap: ;
+}
+
 .column {
 	border-left: var(--styledBorder);
 	border-right: var(--styledBorder);
@@ -125,3 +132,20 @@ p {
 .purple-text {
 	color: var(--purple);
 }
+ 
+@media screen and (max-width: 700px){
+  .body {
+      display: flex;
+      justify-content: space-around;
+      width: 100vw;
+      gap: 7rem;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  article.skills {
+    display: block;
+    overflow-x: auto;  
+  }
