@@ -20,3 +20,8 @@ nameButton.addEventListener('click', function(){
     root.style.setProperty('--lightWildColor', `${backgroundColor}`);
 });
 
+const link = document.querySelectorAll('a');
+link.forEach(element => {
+    element.style.color = '#750ff7';
+});
+
