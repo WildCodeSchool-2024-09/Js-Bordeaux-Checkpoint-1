@@ -127,6 +127,10 @@ p {
     text-align: center;
   }
 
+.skills{
+  flex-direction: row-reverse;
+}
+
   .column{
     width: 100%;
   }
@@ -137,4 +141,18 @@ p {
   .desktop{
     display: none;
   }
+
+  .skills {
+  flex-direction: column;
+  }
+
+  .pink-bg{
+    margin-bottom: 4rem;
+  }
+
+  .logo{
+    text-align: center;
+    /* gap: 1rem; */
+  }
+  
 }
