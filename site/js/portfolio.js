@@ -22,9 +22,23 @@ buttonContainer.appendChild(button);
 const firstname = document.querySelector("#firstname");
 // 5 Écouter le click sur le bouton
 button.addEventListener("click", () => {
-   // 6 Stocker la valeur du prompt dans une variable
-   const value = prompt("Enter your name");
-   firstname.textContent = value;
-   firstname.style.color = "white";   
+  // 6 Stocker la valeur du prompt dans une variable
+const userName = prompt("Enter your name");
+const color = prompt("Enter your color");
+  // 7 Changer la valeur du texte par la valeur récupérée précédemment
+  firstname.textContent = userName;
+  // 8 Changer la couleur du texte
+  firstname.style.color = "white";
+
+  // Third Step
+  // Récupère les éléments avec la class "pink-bg";
+  const bgColor = document.querySelectorAll(".pink-bg");
+   // const bgColor = document.getElementsByClassName("pink-bg");   
+   console.log(bgColor);
+   
+
+//   bgColor.forEach(element => {
+//    element.style.backgroundColor = color;
+//   })
 })
 
