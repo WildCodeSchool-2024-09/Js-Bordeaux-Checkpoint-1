@@ -10,8 +10,11 @@ nameButton.textContent = 'Change name and color';
 sectionPink.appendChild(nameButton);
 
 nameButton.addEventListener('click', function(){
-    let userName = prompt("What's your name ?");
+    let userName = prompt("Enter your name");
     const firstName = document.querySelector('span');
     firstName.textContent = `${userName}`;
     firstName.style.color = 'white';
+
+    let backgroundColor = prompt('Enter a color');
+    sectionPink.style.backgroundColor = `${backgroundColor}`;
 });
