@@ -111,6 +111,10 @@ p {
   box-shadow: var(--styledShadow);
 }
 
+.disabled {
+  opacity: 0.4;
+}
+
 .purple-text {
   color: var(--purple);
 }
@@ -132,6 +136,7 @@ p {
   }
   .skills {
     display: flex;
+    flex-direction: row-reverse;
     justify-self: center;
   }
 }
