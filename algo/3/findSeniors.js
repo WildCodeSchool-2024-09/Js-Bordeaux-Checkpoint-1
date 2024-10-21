@@ -25,8 +25,22 @@ const persons = [
 
 */
 
-function findSeniors(persons) {
-  // Your code here !
+function findSeniors (persons) {
+  let seniors = [];
+  let seniorsDev = [];
+  seniors.push(seniorsDev);
+  let seniorsData = [];
+  seniors.push(seniorsData);
+
+  persons.forEach(element => {
+    if (element.experience >= 5 && element.job === 'web dev'){
+      seniorsDev.push(element.name);
+      return seniors;
+    } else if (element.experience >= 5 && element.job === 'data analyst') {
+      seniorsData.push(element.name);
+      return seniors;
+    }
+  });
 }
 
 module.exports = findSeniors;
