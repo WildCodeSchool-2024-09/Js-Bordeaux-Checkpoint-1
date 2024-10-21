@@ -11,22 +11,55 @@
   --textAlign: center;
 }
 
+header {
+  display:block;
+}
+
 img {
   max-width: 100%;
 }
 
+
+
 h1 {
   font-size: calc(var(--gutter) * 1.5);
+  
+  
 }
 
 p {
   padding: 0 var(--gutter);
 }
 
+ 
+ul.menu {
+  margin-left: 22rem;
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
 }
+
+.avatar {
+  
+margin-left: 15rem;
+}
+ header p {
+  margin-left: 12rem;
+ }
+ header h1 {
+  margin-left: 15rem;
+ }
+img {
+  justify-content: flex-start;
+}
+
+.avatar {
+  justify-content: center;
+}
+
+
 
 .desktop {
   margin: 0;
@@ -107,4 +140,12 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (max-width: 700px) 
+{
+  .disapear {
+    display: none;
+  }
+  
 }
