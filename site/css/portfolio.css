@@ -129,4 +129,13 @@ p {
     margin-top: calc(var(--gutter) * 5);
     margin-bottom: calc(var(--gutter) * -0.3125);
   }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills--title {
+    grid-column: span 2;
+  }
 }
