@@ -8,9 +8,13 @@ Rappel : Pour vérifier si un nombre est divisible par un autre, tu peux utilise
 */
 
 function isLeapYear(year) {
-  if (400% year);
-} 
+  if (400% year || 4 / year) {return true
+  } else {
+    return false
+  }
+}
 
+// je ne comprend pas comment fonctionne le modulo
 
 
 module.exports = isLeapYear;
