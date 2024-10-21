@@ -29,14 +29,9 @@ main section p {
 main section figure.desktop img {
 	display: none;
 }
-
 article.skills {
-	display: grid;
-	grid-column: 2;
-}
-article.skills h2 {
-	grid-column: span 2;
-	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
 }
 article.skills section:first-of-type {
 	order: 3;
@@ -145,5 +140,17 @@ article.skills section:first-of-type {
 	}
 	main section figure.desktop img {
 		display: flex;
+	}
+
+	article.skills {
+		display: grid;
+		grid-column: 2;
+	}
+	article.skills h2 {
+		grid-column: span 2;
+		margin-bottom: 1rem;
+	}
+	article.skills section:first-of-type {
+		order: 0;
 	}
 }
