@@ -114,3 +114,11 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+@media screen and (max-width: 700px) {
+
+.desktop img{
+  display: none;
+}
+  
+}
