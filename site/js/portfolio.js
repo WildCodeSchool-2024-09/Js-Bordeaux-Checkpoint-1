@@ -10,6 +10,7 @@ avatar.addEventListener("click", () => {
 modifybtn.addEventListener("click", () => {
   const firstName = document.querySelector("#firstname");
   const pinktext = document.querySelectorAll(".pink-text");
+  const navLink = document.querySelectorAll("a");
   const descriptionBg = document.querySelectorAll(".description.pink-bg");
   const bgColor = prompt("Quels couleurs voulez vous ?");
   const userName = prompt("Quel est votre nom ?");
@@ -20,5 +21,8 @@ modifybtn.addEventListener("click", () => {
   });
   pinktext.forEach((pinktext) => {
     pinktext.style.color = bgColor;
+  });
+  navLink.forEach((navLink) => {
+    navLink.style.color = "#750ff7";
   });
 });
