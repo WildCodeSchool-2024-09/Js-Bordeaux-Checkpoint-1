@@ -22,6 +22,19 @@ h1 {
 p {
   padding: 0 var(--gutter);
 }
+main > section{
+  display: grid;
+  justify-items: center;
+}
+nav{
+  justify-content: space-between;
+}
+
+.skills{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
 
 .menu {
   display: flex;
@@ -107,4 +120,14 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (max-width: 700px){
+  .desktop{
+    display: none;
+  } 
+  .skills{
+    display: flex;
+    flex-direction: column;
+  } 
 }
