@@ -15,6 +15,7 @@ img {
   max-width: 100%;
 }
 
+
 h1 {
   font-size: calc(var(--gutter) * 1.5);
 }
@@ -45,6 +46,7 @@ p {
 .description p {
   width: 60%;
   text-align: var(--textAlign);
+  display: none;
 }
 
 .pink-bg {
@@ -55,6 +57,9 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
 }
 
 .skills--title {
@@ -107,4 +112,22 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+main > section:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header > nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) { 
+  .desktop {
+    display: none;
+  }
+  .skills {
+    flex-direction: column-reverse;
+  }
 }
