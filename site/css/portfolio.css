@@ -119,11 +119,19 @@ p {
   .desktop {
     display: none;
   }
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 @media screen and (width > 700px) {
   header nav {
     display: flex;
     justify-content: space-between;
+  }
+  .skills {
+    display: flex;
+    justify-self: center;
   }
 }
