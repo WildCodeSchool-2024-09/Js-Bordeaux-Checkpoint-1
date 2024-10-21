@@ -97,7 +97,7 @@ p {
 }
 
 .box {
-  width: 25%;
+  text-align: center;
   padding: calc(var(--gutter) * 2);
   border: var(--styledBorder);
   margin: calc(var(--gutter) * 1.25);
@@ -150,5 +150,21 @@ main > section > figure {
 
   .column:last-of-type {
     grid-area: 1 / 1;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 2fr;
+    justify-items: center;
+  }
+
+  .projects > section:first-of-type {
+    grid-column: span 3;
+    text-align: center;
+  }
+
+  .projects > .box:last-of-type {
+    grid-area: 3/2/4/3;
   }
 }
