@@ -22,6 +22,9 @@ h1 {
 p {
 	padding: 0 var(--gutter);
 }
+main section p {
+	padding: 0;
+}
 
 .menu {
 	display: flex;
@@ -113,5 +116,11 @@ p {
 	header nav {
 		display: flex;
 		justify-content: space-between;
+	}
+	main section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
 	}
 }
