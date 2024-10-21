@@ -48,3 +48,9 @@ modifyButton.addEventListener('click', function(){
     frontDevTools.prepend(thirdLi);
 });
 
+const backDevTools = document.querySelector("#back-dev-tools");
+const addButton = document.createElement('input');
+addButton.type = 'button';
+addButton.textContent = 'Add';
+backDevTools.appendChild(addButton);
+
