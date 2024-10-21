@@ -28,6 +28,10 @@ p {
 	margin-bottom: var(--gutter);
 }
 
+.first_banner {
+	text-align: center;
+}
+
 .desktop {
 	margin: 0;
 	margin-top: calc(var(--gutter) * 5);
