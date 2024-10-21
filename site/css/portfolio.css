@@ -23,6 +23,12 @@ p {
   padding: 0 var(--gutter);
 }
 
+#midHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
@@ -109,14 +115,15 @@ p {
   color: var(--purple);
 }
 
+@media screen and (width < 700px) {
+  .desktop {
+    display: none;
+  }
+}
+
 @media screen and (width > 700px) {
   header nav {
     display: flex;
     justify-content: space-between;
-  }
-  #midHeader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
