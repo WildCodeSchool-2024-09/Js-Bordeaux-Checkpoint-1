@@ -16,5 +16,7 @@ nameButton.addEventListener('click', function(){
     firstName.style.color = 'white';
 
     let backgroundColor = prompt('Enter a color');
-    sectionPink.style.backgroundColor = `${backgroundColor}`;
+    let root = document.documentElement;
+    root.style.setProperty('--lightWildColor', `${backgroundColor}`);
 });
+
