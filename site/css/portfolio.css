@@ -122,6 +122,10 @@ main > section > figure {
   flex-direction: column-reverse;
 }
 
+.disabled{
+  opacity: 60%;
+}
+
 @media screen and (min-width: 700px) {
   header nav {
     justify-content: space-between;
