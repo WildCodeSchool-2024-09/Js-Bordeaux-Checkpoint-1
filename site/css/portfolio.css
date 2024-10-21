@@ -23,12 +23,6 @@ p {
   padding: 0 var(--gutter);
 }
 
-.containersAvatar {
-  display: flex;
-  flex-direction: column;
-  align-items: center
-}
-
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
@@ -113,6 +107,12 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .skills {
