@@ -117,10 +117,14 @@ main section p {
 		display: flex;
 		justify-content: space-between;
 	}
+	main section img.avatar {
+		width: 20%;
+	}
 	main section {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
+		align-items: center;
 	}
 }
