@@ -109,6 +109,10 @@ p {
   color: var(--purple);
 }
 
+main > section > figure {
+  display: none;
+}
+
 @media screen and (min-width: 700px) {
   header nav {
     justify-content: space-between;
@@ -116,5 +120,9 @@ p {
 
   main > section:first-of-type {
     text-align: center;
+  }
+
+  main > section > figure {
+    display: block;
   }
 }
