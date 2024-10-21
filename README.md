@@ -33,9 +33,9 @@ Chaque checkpoint implique un ensemble d’étapes similaires :
 
 Résoud ces exercices :
 
-> [algo1.js](./algo/1/thirdAngle.js)
+> [algo1.js](./algo/1/thirdAngle.js) `Algo 1 terminé`
 >
-> [algo2.js](./algo/2/isLeapYear.js)
+> [algo2.js](./algo/2/isLeapYear.js)`Algo 2 terminé`
 
 Des tests unitaires sont disponibles. Ils te permettront de savoir si tes algorithmes fonctionnent correctement !
 
