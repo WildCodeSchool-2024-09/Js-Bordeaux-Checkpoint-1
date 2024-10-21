@@ -55,6 +55,7 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
 }
 
 .skills--title {
@@ -107,4 +108,33 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (min-width: 700px) {
+  
+  nav{
+    display: flex;
+    justify-content: space-between;
+    }
+
+  .logo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .desktop{
+    text-align: center;
+  }
+
+  .column{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  
+  .desktop{
+    display: none;
+  }
 }
