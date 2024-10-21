@@ -108,3 +108,29 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+@media screen and (min-width: 700px){
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: var(--gutter);
+  
+  }
+  .first-banner{
+    display: flexbox;
+    justify-content: center;
+  }
+  .column {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 700px){
+  .desktop {
+    display: none;
+  }
+  
+}
+
+  
+
