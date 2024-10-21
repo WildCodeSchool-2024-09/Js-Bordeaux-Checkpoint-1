@@ -33,12 +33,24 @@ const color = prompt("Enter your color");
   // Third Step
   // Récupère les éléments avec la class "pink-bg";
   const bgColor = document.querySelectorAll(".pink-bg");
+  
    // const bgColor = document.getElementsByClassName("pink-bg");   
-   console.log(bgColor);
    
 
-//   bgColor.forEach(element => {
-//    element.style.backgroundColor = color;
-//   })
+  bgColor.forEach(element => {
+   element.style.backgroundColor = color;
+  })
+  
+
+// Fourth Step 
+const textColor = document.querySelectorAll(".pink-text");
+textColor.forEach((element) => {
+  element.style.color = color;
+});
+
+// Sarah bonus
+
+const root = document.documentElement;
+root.style.setProperty("--lightWildColor", color);
 })
 
