@@ -9,7 +9,16 @@ avatar.addEventListener("click", () => {
 // Step2
 modifybtn.addEventListener("click", () => {
   const firstName = document.querySelector("#firstname");
+  const pinktext = document.querySelectorAll(".pink-text");
+  const descriptionBg = document.querySelectorAll(".description.pink-bg");
+  const bgColor = prompt("Quels couleurs voulez vous ?");
   const userName = prompt("Quel est votre nom ?");
   firstName.textContent = userName;
   firstName.style.color = "white";
+  descriptionBg.forEach((descriptionBg) => {
+    descriptionBg.style.backgroundColor = bgColor;
+  });
+  pinktext.forEach((pinktext) => {
+    pinktext.style.color = bgColor;
+  });
 });
