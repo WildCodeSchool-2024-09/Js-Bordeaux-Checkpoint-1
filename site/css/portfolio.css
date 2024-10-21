@@ -139,4 +139,12 @@ main > section > figure {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .column:first-of-type {
+    grid-area: 1 / 2;
+  }
+
+  .column:last-of-type {
+    grid-area: 1 / 1;
+  }
 }
