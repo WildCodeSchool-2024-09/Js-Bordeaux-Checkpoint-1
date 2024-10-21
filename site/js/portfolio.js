@@ -1,8 +1,7 @@
-function changeImage(){
-    const avatar = document.getElementsByClassName(".avatar").src;
+    const avatar = document.querySelector(".avatar")
     avatar.addEventListener("click", () => {
-        if (img.src == "image/avatar-bis.png"){
-            img.src = "image/avatar.svg";
+        if (avatar.src = "image/avatar-bis.png"){
+            avatar.src = "image/avatar.svg";
         }
     } 
-)};
+);
