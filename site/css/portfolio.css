@@ -151,6 +151,6 @@ article.skills section:first-of-type {
 		margin-bottom: 1rem;
 	}
 	article.skills section:first-of-type {
-		order: 0;
+		order: 3;
 	}
 }
