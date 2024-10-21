@@ -125,4 +125,13 @@ main > section > figure {
   main > section > figure {
     display: block;
   }
+
+  .skills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills--title{
+    grid-column: span 2;
+  }
 }
