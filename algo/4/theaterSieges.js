@@ -18,7 +18,36 @@ exemple du résultat final :
 */
 
 function theaterSieges() {
-  // Your code here !
-}
+		// Your code here !
+		/*
+    1 Créer mon tableau principal => DONE
+    2 Boucler sur le nombre de colonnes (26) => DONE
+    3 Pour chaque colonne, créer un tableau contenant la liste des sièges (1 - 100)
+    4 Après chaque tour, insérer ce tableau dans le tableau principal
+    5 Retourner le tableau principal
+  */
+
+    const list = [];
+    // for(let i = 1; i <= 26; i++) {
+    //   const column = [];
+    //   for(let j = 1; j <= 100; j++) {
+    //     column.push(`${i}-${j}`);
+    //   }
+    //   list.push(column);
+    // }
+
+    let i = 1;
+    while(i <= 26) {
+      const column = [];
+      let j = 1;
+      while(j <= 100) {
+        column.push(`${i}-${j}`);
+        j++
+      }
+      list.push(column);
+      i++
+    }
+    return list;
+	}
 
 module.exports = theaterSieges;
