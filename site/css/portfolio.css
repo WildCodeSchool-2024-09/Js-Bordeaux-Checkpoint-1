@@ -1,3 +1,4 @@
+
 :root {
   --radius: 12px;
 
@@ -15,6 +16,19 @@ img {
   max-width: 100%;
 }
 
+nav {
+  display: flex;
+  justify-content: space-around;
+  justify-content: space-between;
+}
+section :first-of-type {
+  margin: auto;
+  display: flex;
+  justify-content: center; 
+}
+.image {
+  padding: 2rem;
+}
 h1 {
   font-size: calc(var(--gutter) * 1.5);
 }
@@ -87,11 +101,17 @@ p {
   list-style: none;
   padding: 0;
 }
-
+h2 ,p {
+  text-align: center;
+}
 .pink-text {
   color: var(--lightWildColor);
 }
-
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .projects a {
   color: var(--purple);
 }
@@ -104,7 +124,35 @@ p {
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
 }
-
 .purple-text {
   color: var(--purple);
 }
+@media screen and (min-width: 768px) {
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(1, 1fr);
+  gap: 8px;
+}
+
+.column:first-of-type {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.column:last-child {
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+.projects {
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+  justify-content: center;
+  justify-items: center;
+}
+}
+
